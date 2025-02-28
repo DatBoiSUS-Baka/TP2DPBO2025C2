@@ -10,7 +10,10 @@ class Aksesoris : public PetShop{
         string bahan;
         string warna;
     public:
-        Aksesoris(string id, string name) : PetShop(id, name){
+        Aksesoris(string id, string name, int harga, int stok) : PetShop(id, name, harga, stok){
+            this->jenis = "";
+            this->bahan = "";
+            this->warna = "";
         }
 
         // Method-method untuk set dan get
@@ -34,6 +37,7 @@ class Aksesoris : public PetShop{
         string getWarna(){
             return this->warna;
         }
+
 
         ~Aksesoris(){}
 

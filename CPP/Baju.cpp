@@ -5,19 +5,21 @@
 
 class Baju : public Aksesoris{
     private:
-        string untuk;
+        string untukHewan;
         string size;
         string merk;
     public:
-        Baju(string id, string nama) : Aksesoris(id, nama){
-
+        Baju(string id, string nama, int harga, int stok) : Aksesoris(id, nama, harga, stok){
+            this->untukHewan = "";
+            this->size = "";
+            this->merk = "";
         }
 
-        void setUntuk(string untuk){
-            this->untuk = untuk;
+        void setUntukHewan(string untukHewan){
+            this->untukHewan = untukHewan;
         }
-        string getUntuk(){
-            return this->untuk;
+        string getUntukHewan(){
+            return this->untukHewan;
         }
 
         void setSize(string size){
@@ -33,6 +35,7 @@ class Baju : public Aksesoris{
         string getMerk(){
             return this->merk;
         }
+
 
         ~Baju(){}
 };

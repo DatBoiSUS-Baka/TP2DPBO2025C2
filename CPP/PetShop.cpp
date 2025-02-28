@@ -10,11 +10,11 @@ class PetShop{
         int harga_produk;
         int stok_produk;
     public:
-        PetShop(string id, string name){
+        PetShop(string id, string name, int harga, int stok){
             this->id = id;
             this->nama_produk = name;
-            this->harga_produk = 0;
-            this->stok_produk = 0;
+            this->harga_produk = harga;
+            this->stok_produk = stok;
         }
 
         // Method-method setter dan getter
@@ -46,12 +46,6 @@ class PetShop{
             return this->stok_produk;
         }
 
-        void display(){
-            cout << "Id     : " << this->id << endl;
-            cout << "Nama   : " << this->nama_produk << endl;
-            cout << "Harga  : " << this->harga_produk << endl;
-            cout << "Stok   : " << this->stok_produk << endl;
-        }
 
         ~PetShop(){}
 };
