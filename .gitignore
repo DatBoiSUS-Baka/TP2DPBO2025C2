@@ -3,3 +3,7 @@ CPP/PetShop.o
 CPP/Main.o
 CPP/Baju.o
 CPP/Aksesoris.o
+Java/Program/Main.class
+Java/Program/PetShop.class
+Java/Program/Aksesoris.class
+Java/Program/Baju.class
