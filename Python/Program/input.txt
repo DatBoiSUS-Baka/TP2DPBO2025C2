@@ -1,3 +1,0 @@
-2
-006 MakananAnjing 12500 12 Makanan Daging Coklat Anjing M Doggy
-007 BajuBurung 10000 10 Baju Flanel Biru Burung S Birdy
