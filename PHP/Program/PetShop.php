@@ -16,7 +16,7 @@ class PetShop{
         $this->id = $id;
     }
     public function getId(){
-        return $this->id = $id;
+        return $this->id;
     }
 
     public function setNama($nama){

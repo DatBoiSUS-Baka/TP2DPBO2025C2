@@ -7,12 +7,12 @@ class Baju extends Aksesoris{
     private $merk;
     private $foto;
 
-    public function __construct($id, $nama, $harga, $stok, $jenis, $bahan, $warna, $untuk, $size, $merk, $foto = "default.jpg") {
+    public function __construct($id, $nama, $harga, $stok, $jenis, $bahan, $warna, $untuk, $size, $merk, $foto) {
         parent::__construct($id, $nama, $harga, $stok, $jenis, $bahan, $warna);
         $this->untukHewan = $untuk;
         $this->size = $size;
         $this->merk = $merk;
-        $this->foto = $foto;
+        $this->foto = "default.jpg";
     }
 
     public function setUntukHewan($untuk){
